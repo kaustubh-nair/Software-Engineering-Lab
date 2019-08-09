@@ -10,6 +10,7 @@ import java.util.Scanner;
                 System.out.print("1. Add Two numbers\n");
                 System.out.print("2. Multiply two numbers\n");
                 System.out.print("3. Exit\n");
+                System.out.print("4. Divide two numbers\n");
                 System.out.print("Enter Your choice: \n");
                 choice = scan.next().charAt(0);
                 switch(choice){
@@ -27,6 +28,13 @@ import java.util.Scanner;
                                break;
                     
                     case '3' : System.exit(0);
+                               break;
+                    case '4' : System.out.print("Enter Two numbers: ");
+                               a = scan.nextFloat();
+                               b = scan.nextFloat();
+                               res = a / b;
+                               System.out.print("Result = " + res);
+                               break;
                                break;
                     default : System.out.print("INVALID");
                               break;
